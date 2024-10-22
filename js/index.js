@@ -68,3 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(section);
   });
 });
+
+function goTo(url) {
+  window.location.href = url;
+}

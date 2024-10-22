@@ -3,25 +3,7 @@ function resizeSVGPaths() {
   const screenWidth = window.innerWidth;
 
   svgPaths.forEach((svgPath) => {
-    if (screenWidth <= 398) {
-      const newPath = `
-        M 0 243.3125
-        L 45 261.3125
-        L 90 243.3125
-        L 90 0
-        L 45 18
-        L 0 0 Z`;
-      svgPath.setAttribute("d", newPath);
-    } else if (screenWidth <= 468) {
-      const newPath = `
-        M 0 223.3125
-        L 45 241.3125
-        L 90 223.3125
-        L 90 0
-        L 45 18
-        L 0 0 Z`;
-      svgPath.setAttribute("d", newPath);
-    } else if (screenWidth <= 768) {
+    if (screenWidth <= 768) {
       const newPath = `
         M 0 193.3125
         L 45 211.3125
